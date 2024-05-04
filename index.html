@@ -471,41 +471,34 @@
         </div>
         <div class="div-subscrib-foo">
           <p class="p-subscrib-footer">Subscribe</p>
-          <div class="flex-subscrib-foot">
-            <form class="form-subscrib">
+          <form class="form-subscrib">
+            <label class="label-footer" for="email">
               <input
                 class="form-input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
-            
-          
-              <button class="button-subcribe" type="submit">
-                Subscribe
-                <span class="svg-tellegram"
-                  ><svg
-                    class="svg-telegram-subscrib"
-                    width="24px"
-                    height="24px"
-                  >
-                    <use href="./images/icons.svg#icon-telegram"></use>
-                  </svg>
-                </span>
-              </button>
-            </form>
-            
-          </div>
+            </label>
+
+            <button class="button-subcribe" type="submit">
+              Subscribe
+              <svg class="svg-telegram-subscrib" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-open">
       <div class="popup-container">
-        <button type="submit" class="modal-close">
+        <button type="button" class="modal-close">
           <svg class="close-x-modal" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <div class="pop-upcontent">
         <p class="pupup-p">Leave your contacts and we will call you back</p>
         <form class="form-popup-container">
           <div class="pop-up-name">
@@ -555,12 +548,12 @@
               <span class="svg-line"></span>
             </div>
           </div>
-          <div class="pop-up-name">
-            <label class="popup-label" for="comment">Comment </label>
+          <div class="pop-up-name pop-comment-div">
+            <label class="popup-label" for="user-comment">Comment </label>
             <textarea
               class="pupup-comment"
-              name="comment"
-              id="comment"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -568,12 +561,12 @@
             <input
               class="policy-checkbox-cl visually-hidden"
               type="checkbox"
-              name="policy-checkbox"
-              id="policy-checkbox"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="label-checkbox-policy" for="policy-checkbox"
+            <label class="label-checkbox-policy" for="user-privacy"
               ><span class="span-checkbox"
                 ><svg class="icon-checkbox" width="10px" height="8px">
                   <use href="./images/icons.svg#icon-Vector"></use>
@@ -586,6 +579,7 @@
 
           <button class="button-popup" type="submit">Send</button>
         </form>
+      </div>
       </div>
     </div>
   </body>
