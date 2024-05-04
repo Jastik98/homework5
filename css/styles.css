@@ -593,6 +593,9 @@ textarea {
 }
 .flex-subscrib-foot {
   display: flex;
+}
+.form-subscrib{
+  display: flex;
   gap: 24px;
 }
 .form-input {
